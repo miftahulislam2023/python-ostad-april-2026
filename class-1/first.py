@@ -1,0 +1,1 @@
+print("Today is our first class in this course on Python")
