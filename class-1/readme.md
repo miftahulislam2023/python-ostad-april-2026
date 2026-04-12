@@ -32,4 +32,10 @@
 ## Learning
 - ভয় পাওয়া যাবে না
 - প্রচুর বেশিইইইইইইইইইইইইইইইইইইইইইইইইইইইই পরিশ্রম করতে হবে
-- 
+
+## IDE - Integrated Development Environment
+- Pycharm
+
+## DSA - Data Structure and Algorithm
+
+##
