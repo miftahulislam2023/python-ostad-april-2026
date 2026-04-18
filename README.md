@@ -3,4 +3,4 @@
 
 ## Topics to be covered later
 - id()
-- bool
+- or, not
