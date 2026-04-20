@@ -33,6 +33,7 @@
 - ভয় পাওয়া যাবে না
 - প্রচুর বেশিইইইইইইইইইইইইইইইইইইইইইইইইইইইই পরিশ্রম করতে হবে
 - আপনি শুরুতেই পারবেন না 
+- DON'T USE AI -> CODE YOURSELF
 
 ## IDE - Integrated Development Environment
 - Pycharm

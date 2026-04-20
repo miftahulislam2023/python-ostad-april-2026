@@ -1,0 +1,2 @@
+if not "":
+    print("Habasjdsadjasdasdj")

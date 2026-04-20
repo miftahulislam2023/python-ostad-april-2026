@@ -3,4 +3,3 @@
 
 ## Topics to be covered later
 - id()
-- or, not
