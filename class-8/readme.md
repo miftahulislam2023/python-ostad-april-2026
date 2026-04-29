@@ -1,16 +1,19 @@
 # Class 8
 
 ## Today's Topic
+
 - for loop
 - range()
 - loop nesting -> nested loop
 
 ## Structure of range()
+
 - range(start, end + 1, step)
 
 ## Divide and Conqueer -> One of the Most Effective Ways of Solving a Problem
 
 ## Homework
+
 ``` No problem! Let’s swap out the nested pattern for something more visual and straightforward. We’ll focus on how a nested loop can be used to "coordinate" two different lists.
 
 Question 1: The Basic Counter
