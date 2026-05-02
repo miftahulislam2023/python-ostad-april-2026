@@ -15,9 +15,6 @@ else:
     elif month > 4 or (month == 4 and day > 22):
         final_age = primary_age - 1
         print("Your age is", final_age)
-
-print("asdsadsadasd")
-
         
 
 
