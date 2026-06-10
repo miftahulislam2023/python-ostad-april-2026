@@ -6,5 +6,4 @@ matrix = [
 
 for i in range(3):
     for j in range(2):
-        if matrix[i][j] == 5:
-            print("Found 5!")
+        ix
