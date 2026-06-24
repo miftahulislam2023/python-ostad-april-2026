@@ -353,7 +353,7 @@ print(multiply.__doc__)
 
 ```
 
-### उदाहरण ২:
+### উদাহরণ ২:
 
 ```python
 def is_prime(n):
