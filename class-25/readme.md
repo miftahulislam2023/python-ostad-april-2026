@@ -211,3 +211,7 @@ with open("dict_students.csv", mode="w", newline="", encoding="utf-8") as file:
 1. **`newline=""`:** CSV ফাইল ওপেন করার সময় `newline=""` দেওয়া উচিত, অন্যথায় উইন্ডোজে ডাবল নিউলাইন বা ফাঁকা রো তৈরি হতে পারে।
 2. **`encoding="utf-8"`:** বাংলা বা অন্য কোনো ইউনিকোড ক্যারেক্টার নিয়ে কাজ করার সময় ফাইল ওপেন করার সময় অবশ্যই `encoding="utf-8"` ব্যবহার করবেন।
 3. **`with` স্টেটমেন্ট:** ফাইলে কাজ করার জন্য সবসময় `with` ব্লক ব্যবহার করা বেস্ট প্র্যাকটিস।
+
+## Homework
+1. Create a python program to write down prime numbers from 1 to 1000 in a file called prime-numbers.txt
+2. Create a python program to write 1 to 30 namota (counting table) in a file called namota.txt 
