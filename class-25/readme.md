@@ -8,8 +8,9 @@
 2. [ফাইল ওপেন করা এবং মোডসমূহ (File Modes)](#২-ফাইল-ওপেন-করা-এবং-মোডসমূহ)
 3. [ফাইল রিড করা (Reading Files)](#৩-ফাইল-রিড-করা)
 4. [ফাইলে রাইট বা অ্যাপেন্ড করা (Writing and Appending)](#৪-ফাইলে-রাইট-বা-অ্যাপেন্ড-করা)
-5. [ফাইল ক্লোজ করা এবং `with` স্টেটমেন্ট (Context Manager)](#৫-ফাইল-ক্লোজ-করা-এবং-with-স্টেটমেন্ট)
-6. [CSV ফাইলের সাথে কাজ করা (Working with CSV)](#৬-csv-ফাইলের-সাথে-কাজ-করা)
+5. [ফাইল ডিলিট করা (Deleting Files)](#৫-ফাইল-ডিলিট-করা)
+6. [ফাইল ক্লোজ করা এবং `with` স্টেটমেন্ট (Context Manager)](#৬-ফাইল-ক্লোজ-করা-এবং-with-স্টেটমেন্ট)
+7. [CSV ফাইলের সাথে কাজ করা (Working with CSV)](#৭-csv-ফাইলের-সাথে-কাজ-করা)
 
 ---
 
@@ -109,7 +110,23 @@ file.close()
 
 ---
 
-## ৫. ফাইল ক্লোজ করা এবং `with` স্টেটমেন্ট (Context Manager)
+## ৫. ফাইল ডিলিট করা (Deleting Files)
+ফাইল ডিলিট বা মুছে ফেলার জন্য পাইথনের `os` (Operating System) মডিউল ব্যবহার করা হয়।
+
+```python
+import os
+
+# ফাইল ডিলিট করা
+if os.path.exists("output.txt"):
+    os.remove("output.txt")
+    print("File deleted successfully.")
+else:
+    print("File not found.")
+```
+
+---
+
+## ৬. ফাইল ক্লোজ করা এবং `with` স্টেটমেন্ট (Context Manager)
 সবসময় ফাইল ব্যবহারের পর `file.close()` করা জরুরি। যদি কোনো কারণে প্রোগ্রামে এরর আসে, তাহলে ফাইলটি ওপেন অবস্থায় থেকে যেতে পারে এবং মেমোরি নষ্ট হতে পারে। 
 
 এই সমস্যা এড়ানোর জন্য পাইথনে **`with` স্টেটমেন্ট** বা **Context Manager** ব্যবহার করা হয়। `with` ব্লকের কাজ শেষ হলে পাইথন নিজে থেকেই ফাইলটি ক্লোজ করে দেয়, কোনো এক্সপ্লিসিট `close()` লিখতে হয় না।
@@ -124,7 +141,7 @@ with open("demo.txt", "r") as file:
 
 ---
 
-## ৬. CSV ফাইলের সাথে কাজ করা (Working with CSV)
+## ৭. CSV ফাইলের সাথে কাজ করা (Working with CSV)
 CSV বা **Comma Separated Values** হলো টেবুলার ডেটা (যেমন এক্সেল শিট) সংরক্ষণের একটি জনপ্রিয় ফরম্যাট। পাইথনে বিল্ট-ইন `csv` মডিউল ব্যবহার করে খুব সহজে CSV ফাইল রিড ও রাইট করা যায়।
 
 ### CSV ফাইল রিড করা (`csv.reader`):
@@ -214,4 +231,4 @@ with open("dict_students.csv", mode="w", newline="", encoding="utf-8") as file:
 
 ## Homework
 1. Create a python program to write down prime numbers from 1 to 1000 in a file called prime-numbers.txt
-2. Create a python program to write 1 to 30 namota (counting table) in a file called namota.txt 
+2. Create a python program to write 1 to 30 namota (times table/counting table) in a file called namota.txt
