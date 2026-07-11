@@ -4,7 +4,9 @@
 - Mini Project – Expense Tracker or File Note App
 
 ## Expense Tracker Program
+
 ### Requirements
+
 #### Sections
 1. Expense
    - ID (auto-generated, unique)
@@ -31,6 +33,7 @@
    - Type (EXPENSE | INCOME)
    - DateCreated (auto-generated, default - current date)
    - DateUpdated (auto-generated, default - current date)
+
 #### Operations
 1. Income
    - Add Income
@@ -68,3 +71,5 @@
    - Item Filter
    - Item Pagination
    - Item Get by ID
+   - Load Data
+   - Save Data

@@ -65,17 +65,13 @@ categories = []
 ## Functions
 ## File Related Functions
 def load_data():
+    global incomes, expenses, categories
     with open("class-27/json/incomes.json", "r") as f:
         incomes = json.load(f)
-        print(incomes)
     with open("class-27/json/expenses.json", "r") as f:
         expenses = json.load(f)
-        print(expenses)
     with open("class-27/json/categories.json", "r") as f:
         categories = json.load(f)
-        print(categories)
-    
-    print("Data loaded successfully")
 
 def save_data():
     with open("class-27/json/incomes.json", "w") as f:
