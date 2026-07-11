@@ -1,0 +1,32 @@
+[
+  {
+    "income_id": 1,
+    "category": "Salary",
+    "short_description": "July Salary",
+    "description": "Monthly paycheck from tech company",
+    "amount": "5000",
+    "date": "2026-07-01",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  },
+  {
+    "income_id": 2,
+    "category": "Freelancing",
+    "short_description": "Website Design Project",
+    "description": "Payment for building local bakery website",
+    "amount": "1200",
+    "date": "2026-07-05",
+    "date_created": "2026-07-05",
+    "date_updated": "2026-07-05"
+  },
+  {
+    "income_id": 3,
+    "category": "Freelancing",
+    "short_description": "Mobile App Consulting",
+    "description": "Consulting work for fintech startup",
+    "amount": "800",
+    "date": "2026-07-08",
+    "date_created": "2026-07-08",
+    "date_updated": "2026-07-08"
+  }
+]

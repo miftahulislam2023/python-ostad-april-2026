@@ -1,0 +1,28 @@
+[
+    {
+        "contact_id": 1,
+        "name": "John Doe",
+        "phone": "1234567890",
+        "email": "johndoe@gmail.com",
+        "address": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "12345",
+        "country": "USA",
+        "date_created": "2022-01-01",
+        "date_updated": "2022-01-01"
+    },
+    {
+        "contact_id": 2,
+        "name": "Miftahul Islam",
+        "phone": "1234567890",
+        "email": "miftah@miftahcoding.com",
+        "address": "123 Main St",
+        "city": "Dhaka",
+        "state": "Dhaka",
+        "zip": "12345",
+        "country": "Bangladesh",
+        "date_created": "2022-01-01",
+        "date_updated": "2022-01-01"
+    }
+]

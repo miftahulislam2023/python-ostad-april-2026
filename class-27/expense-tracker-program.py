@@ -55,6 +55,7 @@
    - Get Category by ID
 """
 
+import json
 from datetime import datetime
 
 incomes = []
@@ -64,9 +65,25 @@ categories = []
 ## Functions
 ## File Related Functions
 def load_data():
-    pass
+    with open("class-27/json/incomes.json", "r") as f:
+        incomes = json.load(f)
+        print(incomes)
+    with open("class-27/json/expenses.json", "r") as f:
+        expenses = json.load(f)
+        print(expenses)
+    with open("class-27/json/categories.json", "r") as f:
+        categories = json.load(f)
+        print(categories)
+    
+    print("Data loaded successfully")
+
 def save_data():
-    pass
+    with open("class-27/json/incomes.json", "w") as f:
+        json.dump(incomes, f)
+    with open("class-27/json/expenses.json", "w") as f:
+        json.dump(expenses, f)
+    with open("class-27/json/categories.json", "w") as f:
+        json.dump(categories, f)
 
 ## Income Related Functions
 def add_income():
@@ -94,7 +111,7 @@ def add_income():
     print("Income added successfully")
 
 def list_income():
-    no_of_items_to_show = int(input("How many items do you want to see? (0 for all)"))
+    no_of_items_to_show = int(input("How many items do you want to see? (0 for all) - "))
     if no_of_items_to_show == 0:
         for income in incomes:
             print(income)
@@ -225,7 +242,7 @@ def add_expense():
     print("Expense added successfully")
 
 def list_expense():
-    no_of_items_to_show = int(input("How many items do you want to see? (0 for all)"))
+    no_of_items_to_show = int(input("How many items do you want to see? (0 for all) - "))
     if no_of_items_to_show == 0:
         for expense in expenses:
             print(expense)
@@ -352,7 +369,7 @@ def add_category():
     print("Category added successfully")
     
 def list_category():
-    no_of_items_to_show = int(input("How many items do you want to see? (0 for all)"))
+    no_of_items_to_show = int(input("How many items do you want to see? (0 for all) - "))
     if no_of_items_to_show == 0:
         for category in categories:
             print(category)
@@ -430,4 +447,90 @@ def get_category_by_id():
 
 ## Main Menu
 def main_menu():
-    pass
+    load_data()
+    while True:
+        print("\nExpense Tracker Menu")
+        print("1. Add Expense")
+        print("2. List Expense")
+        print("3. Update Expense")
+        print("4. Delete Expense")
+        print("5. Search Expense")
+        print("6. Filter Expense")
+        print("7. Pagination Expense")
+        print("8. Get Expense by ID")
+        print("9. Add Income")
+        print("10. List Income")
+        print("11. Update Income")
+        print("12. Delete Income")
+        print("13. Search Income")
+        print("14. Pagination Income")
+        print("15. Get Income by ID")
+        print("16. Add Category")
+        print("17. List Category")
+        print("18. Update Category")
+        print("19. Delete Category")
+        print("20. Search Category")
+        print("21. Pagination Category")
+        print("22. Get Category by ID")
+        print("23. Exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            add_expense()
+            save_data()
+        elif choice == "2":
+            list_expense()
+        elif choice == "3":
+            update_expense()
+            save_data()
+        elif choice == "4":
+            delete_expense()
+            save_data()
+        elif choice == "5":
+            search_expense()
+        elif choice == "6":
+            filter_expense()
+        elif choice == "7":
+            pagination_expense()
+        elif choice == "8":
+            get_expense_by_id()
+        elif choice == "9":
+            add_income()
+            save_data()
+        elif choice == "10":
+            list_income()
+        elif choice == "11":
+            update_income()
+            save_data()
+        elif choice == "12":
+            delete_income()
+            save_data()
+        elif choice == "13":
+            search_income()
+        elif choice == "14":
+            pagination_income()
+        elif choice == "15":
+            get_income_by_id()
+        elif choice == "16":
+            add_category()
+            save_data()
+        elif choice == "17":
+            list_category()
+        elif choice == "18":
+            update_category()
+            save_data()
+        elif choice == "19":
+            delete_category()
+            save_data()
+        elif choice == "20":
+            search_category()
+        elif choice == "21":
+            pagination_category()
+        elif choice == "22":
+            get_category_by_id()
+        elif choice == "23":
+            save_data()
+            break
+        else:
+            print("Invalid choice")
+
+main_menu()

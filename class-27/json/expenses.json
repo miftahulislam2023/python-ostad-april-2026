@@ -1,0 +1,32 @@
+[
+  {
+    "expense_id": 1,
+    "category": "Rent",
+    "short_description": "July Apartment Rent",
+    "description": "Rent payment for downtown apartment",
+    "amount": "1500",
+    "date": "2026-07-01",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  },
+  {
+    "expense_id": 2,
+    "category": "Groceries",
+    "short_description": "Weekly Groceries",
+    "description": "Purchased vegetables, milk, chicken, and pantry staples",
+    "amount": "120",
+    "date": "2026-07-03",
+    "date_created": "2026-07-03",
+    "date_updated": "2026-07-03"
+  },
+  {
+    "expense_id": 3,
+    "category": "Groceries",
+    "short_description": "Supermarket Visit",
+    "description": "Snacks and detergent",
+    "amount": "45",
+    "date": "2026-07-10",
+    "date_created": "2026-07-10",
+    "date_updated": "2026-07-10"
+  }
+]

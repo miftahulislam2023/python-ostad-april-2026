@@ -1,0 +1,34 @@
+[
+  {
+    "category_id": 1,
+    "title": "Salary",
+    "description": "Monthly primary job salary",
+    "type": "INCOME",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  },
+  {
+    "category_id": 2,
+    "title": "Freelancing",
+    "description": "Side projects and contract work",
+    "type": "INCOME",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  },
+  {
+    "category_id": 3,
+    "title": "Groceries",
+    "description": "Food and household supplies",
+    "type": "EXPENSE",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  },
+  {
+    "category_id": 4,
+    "title": "Rent",
+    "description": "Monthly apartment rent and utilities",
+    "type": "EXPENSE",
+    "date_created": "2026-07-01",
+    "date_updated": "2026-07-01"
+  }
+]
